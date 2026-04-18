@@ -1,10 +1,7 @@
-#### `README.md`
-*(Cubre IL1.4: justificacion basica y como ejecutar)*
-```markdown
 # Proyecto RAG - Asistente Academico Duoc UC
 
 ## Que hace
-Sistema basico que responde preguntas sobre reglamentos y calendarios de Duoc usando documentos locales.
+Es un sistema basico que responde preguntas sobre reglamentos y calendarios de Duoc usando documentos locales.
 
 ## Como usar
 1. Crea un entorno virtual: `python -m venv venv`
