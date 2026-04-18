@@ -1,0 +1,20 @@
+Instrucciones para la Ejecución del Proyecto 
+
+1.Preparación del Entorno Virtual
+Abrir la terminal en la raíz del proyecto y crear un entorno virtual para aislar las librerías:
+python -m venv venv
+
+2. Activación del Entorno
+Windows: .\venv\Scripts\activate
+Linux/Mac: source venv/bin/activate
+
+3. Instalación de Dependencias
+Es obligatorio instalar todas las librerías del proyecto mediante el archivo de requerimientos para que el código funcione correctamente:
+pip install -r requirements.txt
+
+4. Configuración de Credenciales
+Crear un archivo llamado .env en la raíz del proyecto e incluir el token de GitHub Models:
+GITHUB_TOKEN=tu_token_aqui
+
+5. Ejecución del AsistenteUna vez instaladas las dependencias, ejecutar el script principal:
+python SRC/Rag/Pipeline.py
