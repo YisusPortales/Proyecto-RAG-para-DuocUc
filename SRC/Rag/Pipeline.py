@@ -12,7 +12,6 @@ from langchain_core.output_parsers import StrOutputParser
 
 # 1. Configurar rutas y cargar Prompts locales
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# Subimos dos niveles para llegar a la raíz y luego a Prompts
 PROMPTS_PATH = os.path.normpath(os.path.join(BASE_DIR, '..', 'Prompts'))
 sys.path.append(PROMPTS_PATH)
 
@@ -42,7 +41,6 @@ def main():
     )
 
     # B. CARGA DE DOCUMENTOS (Local)
-    # Ruta: C:\Proyectos\Proyecto ScIA Rag Duoc\Datos\Internos
     data_folder = os.path.normpath(os.path.join(BASE_DIR, '..', '..', 'Datos', 'Internos'))
     print(f"\n[2/4] Leyendo reglamentos en: {data_folder}")
     
@@ -62,8 +60,7 @@ def main():
     print("\n[3/4] Generando base de datos vectorial local...")
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=150)
     splits = text_splitter.split_documents(docs)
-
-    # Modelo local de HuggingFace (Portabilidad total)
+    
     embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
     vectorstore = FAISS.from_documents(splits, embeddings)
     retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
@@ -72,7 +69,6 @@ def main():
     print("\n[4/4] Orquestando cadena de respuesta...")
     prompt = ChatPromptTemplate.from_template(USER_PROMPT_TEMPLATE)
 
-    # El objeto "question" debe coincidir con el {question} de tu template
     chain = (
         {
             "context": retriever, 
