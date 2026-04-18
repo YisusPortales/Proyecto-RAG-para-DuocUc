@@ -1,0 +1,16 @@
+# Entorno virtual (muy pesado, no se sube)
+venv/
+.venv/
+env/
+
+# Archivos de configuración con tus llaves (¡PRIVADO!)
+.env
+
+# Carpetas de caché de Python
+__pycache__/
+*.py[cod]
+
+# Archivos temporales de Windows o editores
+.vscode/
+.idea/
+Thumbs.db

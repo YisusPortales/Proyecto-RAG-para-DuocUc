@@ -1,0 +1,45 @@
+Propuesta de Caso Organizacional
+
+Integrante: Jesus Portales G
+Asignatura: Ingenieria de Soluciones con Inteligencia Artificial
+Profesor: Javier Esteban Peña Reyes
+Siglas: ISY0101 -008 V 
+
+Organizacion
+Nombre: Instituto Profesional Duoc UC
+Rubro: Educación superior tecnica y profesional
+Contexto: Institucion con sedes nacionales, tiene la modalidad de presencial y online
+
+Problema o Desafio
+Los estudiantes de Duoc dedican demasiado tiempo en buscar informacion academica dispersa en varios documentos como (reglamento,
+calendarios, instructivos), por lo que esto genera:
+- Consultas repetitivas en la secretaría academica
+- Errores en tramites por información desactualizada
+- Frustración en procesos de admision, evaluacion y titulacion
+
+Que deseo lograr con esta idea
+- Primeramente poder centralizar o apresurar respuestas a preguntas frecuentes sobre tramites academicos
+- Reducir en al menos un 70% el tiempo de busqueda de informacion normativa
+- Entregar respuestas con la fuente citada para garantizar trazabilidad
+
+Datos disponibles
+- Reglamento Academico del 2025 (PDF publico) 
+- Calendario Academico del 2025 (PDF oficial)
+- Instructivos y resoluciones publicadas en duoc.cl o correos
+- Preguntas frecuntes institucionales
+
+Restricciones
+- Uso exclusivo de documentos publicos o simulados
+- Respuestas deben citar fuente exacta (artículo y pagina)
+- No almacenar datos personales de estudiantes
+
+Motivacion para crear una IA + RAG
+Un asistente basado en RAG que permita:
+- Recuperar fragmentos precisos de documentos largos
+- Responder en lenguaje natural manteniendo fidelidad a la fuente
+- Atender multiples consultas sin saturar a las personas que atienden dentro de cada sede
+
+Referencias
+- Reglamento Academico Duoc UC: https://www.duoc.cl/reglamento-academico/
+- Calendario Academico 2025: https://www.duoc.cl/calendario-academico/
+- Sitio institucional: https://www.duoc.cl/
