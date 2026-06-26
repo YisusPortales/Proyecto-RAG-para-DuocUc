@@ -1,0 +1,61 @@
+===========================================================================
+PROPUESTA DE CASO ORGANIZACIONAL - DETALLE DE ARQUITECTURA COGNITIVA
+===========================================================================
+
+INTEGRANTE: Jesus Portales G.
+ASIGNATURA: Ingenieria de Soluciones con Inteligencia Artificial
+PROFESOR: Javier Esteban Pena Reyes
+SIGLAS: ISY0101-008V
+
+---------------------------------------------------------------------------
+1. IDENTIFICACION DE LA ORGANIZACION
+---------------------------------------------------------------------------
+Nombre: Instituto Profesional Duoc UC
+Rubro: Educacion superior tecnica y profesional
+Contexto: Institucion con sedes nacionales de alta complejidad, operando en modalidades presencial, semipresencial y online de manera integrada.
+
+---------------------------------------------------------------------------
+2. DEFINICION DEL PROBLEMA O DESAFIO
+---------------------------------------------------------------------------
+Los estudiantes de la institucion dedican excesivo tiempo operacional en localizar informacion academica y normativa dispersa en multiples repositorios (reglamentos generales, calendarios sectoriales, instructivos de escuela, resoluciones). Esta dispersion genera las siguientes consecuencias ineficientes:
+- Saturacion y consultas repetitivas de baja complejidad en la secretaria academica de cada sede.
+- Errores operativos en tramites criticos debido al acceso de informacion desactualizada por parte de los alumnos.
+- Frustracion estudiantil en hitos clave del ciclo de vida academico como los procesos de admision, evaluacion, convalidaciones y titulacion.
+
+---------------------------------------------------------------------------
+3. OBJETIVOS E IMPACTO ESPERADO
+---------------------------------------------------------------------------
+- Centralizar, automatizar y apresurar las respuestas a preguntas frecuentes sobre tramites y normativas academicas institucionales.
+- Reducir en al menos un 70% el tiempo de busqueda manual de informacion normativa por parte de la comunidad estudiantil.
+- Entregar respuestas estructuradas en lenguaje natural que incluyan la indexacion y cita explicita de la fuente para garantizar trazabilidad y auditoria total (Alineado con KPIs de observabilidad).
+
+---------------------------------------------------------------------------
+4. DATOS DISPONIBLES E INFRAESTRUCTURA DE DATOS
+---------------------------------------------------------------------------
+- Reglamento Academico Vigente 2026 (Documentacion oficial en PDF).
+- Calendario Academico Institucional 2026 (Documentacion oficial en PDF).
+- Instructivos, circulares y resoluciones publicadas de forma oficial en la plataforma web duoc.cl.
+- Matriz consolidada de Preguntas Frecuentes (FAQs) institucionales.
+
+---------------------------------------------------------------------------
+5. RESTRICCIONES Y CAPAS DE SEGURIDAD OPERACIONAL
+---------------------------------------------------------------------------
+- Uso exclusivo de documentos publicos, normativos o simulados para la proteccion del secreto institucional.
+- Obligatoriedad de citar la fuente exacta (documento fuente, articulo y pagina) en cada inferencia del modelo para mitigar riesgos de alucinacion.
+- Privacidad L7 Estricta: Prohibicion de almacenar o persistir datos personales (PII) de estudiantes, implementando capas de enmascaramiento automatico de RUT, nombres y correos en tiempo real antes del procesamiento LLM.
+
+---------------------------------------------------------------------------
+6. JUSTIFICACION Y MOTIVACION PARA CREAR UNA SOLUCION IA + RAG
+---------------------------------------------------------------------------
+La implementacion de un asistente cognitivo basado en RAG (Retrieval-Augmented Generation) resuelve la problematica de la dispersion al permitir:
+- Recuperar fragmentos semanticamente precisos desde documentos densos y de gran extension, evitando la sobrecarga de ventanas de contexto en el LLM.
+- Responder en lenguaje natural corporativo manteniendo una fidelidad absoluta a la fuente, delegando en un Supervisor Jerarquico el bloqueo de consultas fuera de dominio.
+- Atender de forma masiva y simultanea multiples consultas estudiantiles, eliminando los cuellos de botella en la atencion presencial dentro de las sedes.
+
+---------------------------------------------------------------------------
+7. REFERENCIAS Y REPOSITORIOS INSTITUCIONALES
+---------------------------------------------------------------------------
+- Reglamento Academico Duoc UC: https://www.duoc.cl/reglamento-academico/
+- Calendario Academico 2026: https://www.duoc.cl/calendario-academico/
+- Sitio Institucional Oficial: https://www.duoc.cl/
+===========================================================================

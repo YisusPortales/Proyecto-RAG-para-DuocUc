@@ -1,0 +1,24 @@
+# Entorno virtual
+venv/
+.venv/
+env/
+
+# Archivos de configuracion con tus llaves
+.env
+
+# Carpetas de cache de Python y Streamlit
+__pycache__/
+*.py[cod]
+.streamlit/
+
+# Base de datos vectorial local
+*.index
+*.pkl
+
+# Archivos de telemetria y metricas locales
+*dara_metrics.json
+
+# Archivos temporales de Windows o editores
+.vscode/
+.idea/
+Thumbs.db
